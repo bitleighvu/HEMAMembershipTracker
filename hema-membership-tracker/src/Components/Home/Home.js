@@ -1,12 +1,18 @@
 import React from "react";
 
 import "./Home.css";
-import Header from '../Header';
+
 
 const Home = () => {
   return (
     <div>
-      <Header />
+      <a id="text-header">Membership Tracker</a>
+      <input 
+        id="emailInput"
+        className="form-control form-control-lg"
+        type="email"
+        placeholder="johndoe@hema.com"
+      />
     </div>
   );
 };
