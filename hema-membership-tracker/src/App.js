@@ -1,13 +1,18 @@
 import React from 'react';
-import Home from './Components/Common/Home/Home';
-import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+import Home from './Components/Home/Home';
+import Header from './Components/Common/Header';
+
+
+import './App.css';
 
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='App'>
+      <div id='app'>
+        <Header />
         <Switch>
           <Route exact path="/" component={Home} />
           {/* <Route component={NotFound} /> */}
