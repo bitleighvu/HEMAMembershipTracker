@@ -2,15 +2,14 @@ import React from "react";
 import "./Header.css";
 
 const Header = () => {
-  const activeStyle = { color: "#AC539B" };
-
   return (
-    <div id="header">
+    <div id="header"> 
+      <a target="_blank" href="https://www.hemaalliance.com/">
       <img
         src={process.env.PUBLIC_URL + "/images/logo.png"}
         alt="Historical European Martial Arts Logo"
-        id="HEMALogo"
-      />
+        id="HEMALogo"/>
+      </a>
     </div>
   )
 };
