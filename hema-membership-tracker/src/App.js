@@ -1,8 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Home from './Components/Home/Home';
 import Header from './Components/Common/Header';
+import Home from './Components/Home/Home';
+import NotFound from './NotFound';
+
 
 
 import './App.css';
@@ -15,7 +17,7 @@ const App = () => {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          {/* <Route component={NotFound} /> */}
+          <Route component={NotFound} />
           {/* We should add other Routes here */}
         </Switch>
       </div>
