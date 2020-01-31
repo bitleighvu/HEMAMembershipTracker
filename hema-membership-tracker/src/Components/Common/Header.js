@@ -20,7 +20,7 @@ const Header = () => {
                 <a className="nav-link" href="#">Waiver Submission<span className="sr-only"></span></a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Event Sign-In<span className="sr-only"></span></a>
+                <a className="nav-link" href="/eventSignIn">Event Sign-In<span className="sr-only"></span></a>
               </li>
             </ul>
           </div>
