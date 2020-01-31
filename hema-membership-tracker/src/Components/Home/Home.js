@@ -15,22 +15,23 @@ class Home extends React.Component {
     render() {
         return (
             <div id="home-pg">
-                <a id="text-header">Membership Tracker</a>
+                <a className="text-header">Membership Tracker</a>
                 <div id="validation">
                     <div id={'input'}>
                         <input
-                            id="emailInput"
-                            className="form-control form-control-lg"
-                            type="email"
-                            placeholder="johndoe@hema.com"
+                          id="emailInput"
+                          className="form-control form-control-lg"
+                          type="email"
+                          placeholder="johndoe@hema.com"
+                          required
                         />
                     </div>
                     <button
-                        id="button-input"
-                        className="btn btn-secondary btn-md"
-                        onClick={this._onClick.bind(this)}
+                      id="button-input"
+                      className="btn btn-secondary btn-md"
+                      onClick={this._onClick.bind(this)}
                     >
-                        {this.state.processing ? <PulseLoader color={"#fafafa"}/> : "VERIFY MEMBERSHIP"}
+                      {this.state.processing ? <PulseLoader color={"#fafafa"}/> : "VERIFY MEMBERSHIP"}
                     </button>
                 </div>
 
