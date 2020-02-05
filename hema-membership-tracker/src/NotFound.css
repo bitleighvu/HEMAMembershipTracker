@@ -1,0 +1,53 @@
+#notFound-[g] {
+    display: flex;
+    align-items:center;
+}
+
+#text-panel {
+    text-align: left;
+    padding: 5%;
+    width: 75%;
+    float: left;
+}
+
+#oops-txt {
+    font-size: calc(60px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: bold;
+}
+
+#other-txt {
+    font-size: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: bold;
+}
+
+#error-code {
+    font-size: calc(8px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: bold;
+}
+
+#pic-panel {
+    width: 20%;
+    float: left;
+    vertical-align: middle;
+} 
+
+#sad-pic {
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 25%;
+    left: 70%;
+}
+
+@media
+	only screen 
+    and (max-width: 800px), (min-device-width: 300px) 
+    and (max-device-width: 1024px) {
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+    
+    }
+

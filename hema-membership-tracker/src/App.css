@@ -1,0 +1,11 @@
+#app {
+  text-align: center;
+}
+
+.text-header {
+  position: relative;
+  top: 3vw;
+  font-size: calc(20px + 35 * ((100vw - 300px) / (1600 - 300)));
+  font-weight: bold;
+}
+  

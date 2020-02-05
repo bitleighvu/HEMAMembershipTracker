@@ -1,0 +1,22 @@
+#eventSignIn-pg {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#signIn-form {
+    margin-top: 4vw;
+    margin-bottom: 2vw;
+}
+
+#releaseFormLink {
+    margin-left: 4px;
+    color: black;
+}
+
+#signInButton {
+    margin-top: 2vw;
+}
+
+#radioGroup {
+    margin-left: 1vw;
+}

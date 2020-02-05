@@ -1,0 +1,25 @@
+#validation {
+    top: 3vw;
+    position: relative;
+    margin: 0 auto;
+}
+
+#emailInput {
+    width: 45vw;
+    margin: 0 auto;
+}
+
+#button-input {
+    top: 2vw;
+    position: relative;
+    margin: 0 auto;
+    min-height: 2vw;
+    min-width: 7vw;
+    align-items: center;
+}
+
+#message {
+    position: relative;
+    top: 6vw;
+    margin: 0 auto;
+}
