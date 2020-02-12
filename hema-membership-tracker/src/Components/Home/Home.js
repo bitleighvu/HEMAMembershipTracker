@@ -3,16 +3,19 @@ import React from "react";
 import "./Home.css";
 import { PulseLoader } from "react-spinners";
 
+const validEmailRegex = RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
 
 class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             processing: false,
+            emailValid: false
         };
     }
 
     render() {
+        const state = this.state;
         return (
             <div id="home-pg">
                 <a className="text-header">Membership Tracker</a>
@@ -23,6 +26,8 @@ class Home extends React.Component {
                           className="form-control form-control-lg"
                           type="email"
                           placeholder="johndoe@hema.com"
+                          onChange={this._onChange.bind(this)} 
+                          noValidate
                           required
                         />
                     </div>
@@ -30,11 +35,11 @@ class Home extends React.Component {
                       id="button-input"
                       className="btn btn-secondary btn-md"
                       onClick={this._onClick.bind(this)}
+                      disabled={!state.emailValid} 
                     >
                       {this.state.processing ? <PulseLoader color={"#fafafa"}/> : "VERIFY MEMBERSHIP"}
                     </button>
                 </div>
-
                 <span id="message">Please input an email to check on their HEMAA membership status.</span>
 
             </div>
@@ -50,6 +55,13 @@ class Home extends React.Component {
                 processing: false
             })
         }, 2000);
+    }
+
+    _onChange(e) {
+        var email = e.target.value;
+        this.setState({
+            emailValid: validEmailRegex.test(email)
+        })
     }
 }
 
