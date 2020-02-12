@@ -23,3 +23,7 @@
     top: 6vw;
     margin: 0 auto;
 }
+
+.error {
+    border-color: crimson;
+}

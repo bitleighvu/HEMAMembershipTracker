@@ -62,6 +62,11 @@ class Home extends React.Component {
         this.setState({
             emailValid: validEmailRegex.test(email)
         })
+        if (email.length > 0 && !this.state.emailValid) {
+            document.getElementById('emailInput').className = "form-control form-control-lg error"
+        } else {
+            document.getElementById('emailInput').className = "form-control form-control-lg"
+        }
     }
 }
 
