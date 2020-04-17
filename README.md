@@ -1,4 +1,4 @@
-# HEMAA Membership Tracker  * 
+# HEMAA Membership Tracker #
 **HEMAA Membership Tracker v 1.0.0**
 
 The HEMAMembership Tracker was developed for the [Historical European Martial Arts Alliance](https://www.hemaalliance.com/). The tracker was built to easily verify membership status of HEMAA members and associated parties such as vendors and event organizers with solely an email address. This application integrates with TidyHQ (membership management software) to allow for seamless use of its current user database hosted on TidyHQ instead of having to create another account. This will allow members to check their membership status in real-time and automatically be updated.
