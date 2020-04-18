@@ -19,7 +19,7 @@ The HEMAMembership Tracker was developed for the [Historical European Martial Ar
 **None**; All needed libraries needed to run the application will be installed during build process
 
 ### Download Instructions ###
-1. [Github Repository](https://github.com/bitleighvu/HEMAMembershipTracker)
+1. Go to [Github Repository](https://github.com/bitleighvu/HEMAMembershipTracker)
 2. Under the repository name, click **Clone or Download**. This will copy the repository link and pull code from the most recent update. 
 3. Open Terminal
 4. Change the current working directory to the location where you want the cloned directory to be made
@@ -32,7 +32,7 @@ The HEMAMembership Tracker was developed for the [Historical European Martial Ar
 6. Press **Enter**. Your local clone will be created.
 
 - If you already have the repository downloaded, enter in, and run the command `git pull origin master` to retrieve the most recent changes.
-- [For more information of Git](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+  - [For more information on Git](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
 
 ### Build Instructions ###
 1. Open the project folder using Terminal
@@ -49,6 +49,12 @@ The HEMAMembership Tracker was developed for the [Historical European Martial Ar
 5. Application will open on your default web browser on **http://localhost:3000/**
 
 ### Troubleshooting ###
-- Project is not displaying on **http://localhost:3000/**
-  - Check that you have opened the project folder and completed **Download Instructions**
+- The project is not displaying on **http://localhost:3000/**
+  - Check that you have opened the project folder and completed **Download and Build Instructions**
+- There is an NPM start error
+  - Open the project folder in terminal
+  - Enter `npm install -g npm@latest` into the terminal to update npm to the latest build
+  - Type `rm - rf node_modules` to remove the existing modules
+  - Type `npm install` to re-install the project dependencies
+  - This should fix an NPM start error. If there are any additional NPM errors, please let us know and you can also look at [Common NPM Errors](https://docs.npmjs.com/common-errors)
 - Let our team know any problems or questions you encounter so we can further improve! 
