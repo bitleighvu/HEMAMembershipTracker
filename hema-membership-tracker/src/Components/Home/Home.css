@@ -9,6 +9,10 @@
     margin: 0 auto;
 }
 
+#error {
+    color: red;
+}
+
 #button-input {
     top: 2vw;
     position: relative;
