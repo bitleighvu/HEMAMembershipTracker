@@ -9,6 +9,10 @@
     margin: 0 auto;
 }
 
+#error {
+    color: red;
+}
+
 #button-input {
     top: 2vw;
     position: relative;
@@ -22,4 +26,12 @@
     position: relative;
     top: 6vw;
     margin: 0 auto;
+}
+
+#toast-success {
+    background: 'green'
+}
+
+#toast-failure {
+    background: 'red'
 }
