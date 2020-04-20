@@ -7,7 +7,12 @@ The HEMAMembership Tracker was developed for the [Historical European Martial Ar
 - New Features 
   - Integration of Application Database with TidyHQ for automatic updates
 - Bug Fixes
+  - Form will no longer send requests with improperly formatted email
+  - Loading animation no longer times out early, it now plays until result is achieved
+  - Program no longer hangs when querying a user account that exists but is inactive
 - Known Bugs
+  - Parsing of current members is not cached, as a result querying members takes longer than optimal
+  - Inputs are not sanatized against malicious code on the frontend (TidyHQ does take care of this on the backend)
 
 ## Install Guide ##
 ### Pre-Requisites ###
