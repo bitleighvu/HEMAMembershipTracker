@@ -31,7 +31,7 @@ class Home extends React.Component {
     render() {
         return (
             <div id="home-pg">
-                <a className="text-header">Membership Tracker</a>
+                <a className="text-header">Membership Checker</a>
 
                 <div id="validation">
                     <div id={'input'}>

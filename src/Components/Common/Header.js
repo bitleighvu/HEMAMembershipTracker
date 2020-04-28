@@ -14,7 +14,7 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <a className="nav-link" href="/">Membership Tracker<span className="sr-only">(current)</span></a>
+                <a className="nav-link" href="/">Membership Checker<span className="sr-only">(current)</span></a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Waiver Submission<span className="sr-only"></span></a>
