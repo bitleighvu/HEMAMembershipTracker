@@ -41,8 +41,7 @@ The HEMAMembership Tracker was developed for the [Historical European Martial Ar
 
 ### Build Instructions ###
 1. Open the project folder using Terminal
-2. Once open, input `cd hema-membership-tracker` into the command line 
-3. Type `npm install` and press **Enter**
+2. Type `npm install` and press **Enter**
 - Installation of Actual Application
 - Application will be installed on your local machine once completing the **Download and Build Instructions**.
 
@@ -62,10 +61,27 @@ Then, re-run `npm install`
   
 ### Run Instructions ###
 1. Open the project folder using Terminal/Command Prompt
-2. Once open, input `cd hema-membership-tracker` into the command line 
-3. Type `git pull origin master` to retrieve the most recent changes in Terminal and press **Enter**
-4. Type `npm start` and press **Enter**
-5. Application will open on your default web browser on **http://localhost:3000/**
+2. Type `git pull origin master` to retrieve the most recent changes in Terminal and press **Enter**
+3. Type `npm start` and press **Enter**
+4. Application will open on your default web browser on **http://localhost:3000/**
+
+### Deployment Options ###
+
+In addition to running the application on your local machine, you have the option of deploying the application to a hosting platform so that others may use it (similarly to the old http://hemaamemberchecker.com/).
+
+Deploying React apps like this is relatively easy, although it is possible to incur an operating cost (usually quite small). Popular options include [Heroku](https://www.heroku.com/home) and [GitHub Pages](https://pages.github.com//amplify/). Heroku allows quick and easy deployment, so some basic instructions for deploying the application are included below.
+
+1. Download and install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+2. Open the project folder using Terminal/Command Prompt
+3. Run `heroku login` to login to your Heroku account (this will happen in your web browser)
+4. Run the following commands to deploy the appliation to Heroku, replacing `{APP}` with any name of your choosing
+```
+heroku create {APP} --buildpack mars/create-react-app
+heroku git:remote -a {APP}
+git push heroku master
+```
+5. This will create a Heroku app and deploy the membership checker to it, allowing you to use the membership checker outside of your personal computer.
+6. Once the above process is complete, you can open the deployed membership checker by running `heroku open`
 
 ### Troubleshooting ###
 - The project is not displaying on **http://localhost:3000/**
