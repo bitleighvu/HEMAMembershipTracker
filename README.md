@@ -42,12 +42,26 @@ The HEMAMembership Tracker was developed for the [Historical European Martial Ar
 ### Build Instructions ###
 1. Open the project folder using Terminal
 2. Once open, input `cd hema-membership-tracker` into the command line 
-3. Type `npm init` and press **Enter**
+3. Type `npm install` and press **Enter**
 - Installation of Actual Application
 - Application will be installed on your local machine once completing the **Download and Build Instructions**.
+
+If `npm install` fails, delete the directory `node_modules`:
+
+Windows (from Command Prompt):
+```
+rd /s /q node_modules
+```
+
+Linux/macOS (from Terminal):
+```
+rm -rf node_modules
+```
+
+Then, re-run `npm install`
   
 ### Run Instructions ###
-1. Open the project folder using Terminal
+1. Open the project folder using Terminal/Command Prompt
 2. Once open, input `cd hema-membership-tracker` into the command line 
 3. Type `git pull origin master` to retrieve the most recent changes in Terminal and press **Enter**
 4. Type `npm start` and press **Enter**
@@ -59,7 +73,7 @@ The HEMAMembership Tracker was developed for the [Historical European Martial Ar
 - There is an NPM start error
   - Open the project folder in terminal
   - Enter `npm install -g npm@latest` into the terminal to update npm to the latest build
-  - Type `rm - rf node_modules` to remove the existing modules
+  - Type `rm -rf node_modules` (on macOS/Linux) or `rd /s /q node_modules` (on Windows) to remove the existing modules
   - Type `npm install` to re-install the project dependencies
   - This should fix an NPM start error. If there are any additional NPM errors, please let us know and you can also look at [Common NPM Errors](https://docs.npmjs.com/common-errors)
 - Let our team know any problems or questions you encounter so we can further improve! 
